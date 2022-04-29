@@ -28,7 +28,8 @@
   },
   "dependencies": {
     "kleur": "^4.1.4",
-    "prompts": "^2.4.2"
+    "prompts": "^2.4.2",
+    "ncp": "^2.0.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.22",
@@ -43,7 +44,6 @@
     "eslint-config-prettier": "^8.5.0",
     "husky": "^7.0.4",
     "jest": "^24.9.0",
-    "ncp": "^2.0.0",
     "nodemon": "^2.0.15",
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
