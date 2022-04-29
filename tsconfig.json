@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "module": "CommonJS",
+    "noImplicitAny": true,
+    "outDir": "./dist",
+    "target": "es5",
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*.ts", "test/sum.spec.ts"],
+  "exclude": ["node_modules", "dist"]
+}

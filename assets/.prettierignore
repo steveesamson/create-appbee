@@ -1,0 +1,10 @@
+build
+node_modules
+.prettierrc
+.vscode
+.eslintignore
+.gitignore
+.prettierignore
+.npmignore
+.gitignore
+.yalc

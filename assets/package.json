@@ -1,0 +1,43 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --passWithNoTests --forceExit --detectOpenHandles",
+    "test:coverage": "jest --forceExit --coverage --detectOpenHandles",
+    "clean": "rimraf build",
+    "prebuild": "yarn clean && yarn test && yarn lint:check && yarn lint:fix && yarn format:check && yarn format:fix",
+    "precommit": "yarn lint:check && yarn lint:fix && yarn format:check && yarn format:fix",
+    "build": "tsc",
+    "start": "node build",
+    "format:check": "prettier src/**/*.ts --check",
+    "format:fix": "prettier src/**/*.ts --write",
+    "lint:check": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "dev:x": "yarn clean",
+    "dev:ts": "tsc -w",
+    "dev:js": "nodemon build/index.js",
+    "dev": "concurrently npm:dev:*"
+  },
+  "dependencies": {
+    "appbee": "^1.1.41"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.22",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "concurrently": "^7.1.0",
+    "coveralls": "^3.0.7",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^7.0.4",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^3.9.10"
+  }
+}

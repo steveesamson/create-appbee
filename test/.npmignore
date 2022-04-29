@@ -1,0 +1,17 @@
+src
+test
+node_modules
+coverage
+TODO
+.DS_Store
+.yalc
+.prettierrc
+.vscode
+.eslintignore
+.gitignore
+.prettierignore
+.npmignore
+.gitignore
+.yalc
+yalc.lock
+yarn-error.log
